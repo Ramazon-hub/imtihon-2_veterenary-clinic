@@ -747,10 +747,7 @@ margin-bottom: 29px;
     border: 2px solid transparent;
 
 }
-.input__feedback:focus,.textarea__feedback:focus{
 
-
-}
 .input__feedback:focus:invalid,.textarea__feedback:focus:invalid{
     color: red;
     border: 2px solid red;
