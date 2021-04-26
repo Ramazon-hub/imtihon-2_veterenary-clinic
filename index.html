@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinary-Clinik</title>
-    <!--<link rel="stylesheet" href="./styles/style.css">-->
-    <link rel="stylesheet" href="./styles/min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--<link rel="stylesheet" href="./styles/min.css">-->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/fonts.css">
 </head>
 <body>
     <section class="headr">
-        <a href="#" class="headr__logo">
+        <a href="#" class=" headr__logo">
            <img 
         class="logo"
         src="./images/logo.png" 
@@ -87,36 +87,36 @@
             class="arrow-right"
             src="./images/arrowright.png" 
             alt="">
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link--first">
                 <div class="uslugi-card uslugi-card--1">
                 <h4 class="title-medium title-medium--card">Первичный осмотр</h4>
                 </div>
             </a>
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link">
                     <div class="uslugi-card uslugi-card--2">
                     <h4 class="title-medium title-medium--card">Первичный осмотр</h4>
                 </div>
             </a>            
             
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link">
                 <div class="uslugi-card uslugi-card--3">
                 <h4 class="title-medium title-medium--card">Хирургическое вмешательство</h4>
                 </div>
             </a>
             
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link">
                     <div class="uslugi-card uslugi-card--4">
                     <h4 class="title-medium title-medium--card">Дерматология</h4>
                     </div>
             </a>
             
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link">
                 <div class="uslugi-card uslugi-card--5">
                 <h4 class="title-medium title-medium--card">Лабораторная диагностика</h4>
                 </div>
             </a>
             
-            <a href="#" class="uslugi--link">
+            <a href="#" class="uslugi__link--last">
                     <div class="uslugi-card uslugi-card--6">
                     <h4 class="title-medium title-medium--card">Офтальмология</h4>
                     </div>
@@ -205,17 +205,21 @@
              type="text" name="ism" id="" 
              required
              minlength="3"
+             autocomplete="off"
              placeholder="Ваше имя">
             <input class="input__feedback" 
-            type="email" name="email" id="" 
+            type="email" 
+            name="email" 
+            id="" 
+            autocomplete="off"
             pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"
             placeholder="Email для обратной связи">
             <textarea 
-            placeholder="Опишите Ваш вопрос." 
+            placeholder="Опишите Ваш вопрос."
             class="textarea__feedback"  
-            name="feedback" id="" >
-                Например: в каком возрасте можно прививать от бешенства?
-            </textarea>
+            name="feedback" 
+            minlength="3"           
+            id="" ></textarea>
             <button class="btn btn--feedback" type="submit">Задать нам вопрос</button>
             </form>
         </div>

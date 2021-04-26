@@ -336,7 +336,7 @@ opacity: .6;
 *************************************/
 .uslugi-top{
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: space-between;
 position: relative;
 }
@@ -347,15 +347,22 @@ padding: 42px 105px 43px 35px;
 background-color: var(--color-white);
 
 }
+.uslugi__link,.uslugi__link--first,.uslugi__link--last{
+text-decoration: none;
+font-weight: 500;
+    color: #333333;
+}
 .arrow-left{
     position: absolute;
     left: -50px;
+    top: 40%;
     background-color: transparent;
     padding: 12px 18px;
 }
 .arrow-right{
     position: absolute;
     right: -50px;
+    top: 40%;
     padding: 12px 18px;
 }
 .arrow-left:hover{
@@ -737,18 +744,26 @@ margin-bottom: 29px;
     width: 375px;
     border: none;
     outline: none;
+    border: 2px solid transparent;
 
 }
 .input__feedback:focus,.textarea__feedback:focus{
-color: green;
+
+
 }
-.input__feedback:invalid,.textarea__feedback:invalid{
+.input__feedback:focus:invalid,.textarea__feedback:focus:invalid{
     color: red;
+    border: 2px solid red;
 }
-
-
-
-.input__feedback::placeholder,.textarea__feedback::placeholder{
+.input__feedback:focus:valid,.textarea__feedback:focus:valid{
+    color: #f1c40f;
+    border: 2px solid#f1c40f;
+}
+.textarea__feedback{
+height: 165px;
+resize: none;
+}
+.input__feedback::placeholder{
     font-size: 16px;
     line-height: 20px;
     color: var(--color-text);
