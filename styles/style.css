@@ -716,9 +716,11 @@ margin-bottom: 32px;
     display: flex;
     margin-top: 265px;
 }
+.feedback__iframe{
+    flex-basis: 462px;
+}
 .feedback-right{
-    flex-basis: 100%;
-    height:652px;
+   flex-grow: 1;
     padding: 62px 0px 74px 166px;
 background-color: #000;
 background-image: url(../images/feedback-bgi.png);
